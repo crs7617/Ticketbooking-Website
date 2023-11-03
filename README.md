@@ -1,6 +1,5 @@
 # Ticketbooking-Website
 
-Certainly, here's a basic GitHub README for your ticket booking web application code:
 
 ```markdown
 # Ticket Booking System
