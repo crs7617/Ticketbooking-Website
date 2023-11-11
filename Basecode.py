@@ -30,7 +30,6 @@ seat_cols = 10
 
 selected_seats = st.sidebar.multiselect("Select Seats", [f"Row {i}, Seat {j}" for i in range(1, seat_rows + 1) for j in range(1, seat_cols + 1)], [], num_tickets)
 
-# Book button
 if st.sidebar.button("Book Tickets"):
     if len(selected_seats) == num_tickets:
         # Simulate payment processing
