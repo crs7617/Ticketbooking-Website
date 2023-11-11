@@ -42,13 +42,11 @@ if st.sidebar.button("Book Tickets"):
     else:
         st.warning("Please select the correct number of seats.")
 
-# Availability
 st.subheader("Seat Availability")
 available_seats = [f"Row {i}, Seat {j}" for i in range(1, seat_rows + 1) for j in range(1, seat_cols + 1)]
 for seat in selected_seats:
     available_seats.remove(seat)
 st.write(f"{len(available_seats)} seats available out of {seat_rows * seat_cols}")
 
-# Footer
 st.markdown("---")
 st.markdown("Developed by Your Name")
